@@ -18,16 +18,16 @@ class SubclassDict(TypeDict):
 
     def __setitem__(self, key: HashableType, value: Any) -> None:
         try:
-            self[key]
+            super().__getitem__(key)
         except KeyError as e:
             super_key = self._get_super_key(key)
             if super_key is not None:
                 super().__setitem__(super_key, value)
-        else:
-            super().__setitem__(key, value)
+                return
+        super().__setitem__(key, value)
         
     def _get_super_key(self, value) -> HashableType | None:
-        for key in self.data:
+        for key in self.keys():
             if issubclass(value, key):
                 return key
         return None
