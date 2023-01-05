@@ -9,13 +9,12 @@ class HashableType(Hashable, type):
 class SubclassDict(TypeDict):
     def __getitem__(self, value: HashableType) -> Any:
         try:
-            out = self[value]
+            return super().__getitem__(value)
         except KeyError as e:
             super_key = self._get_super_key(value)
             if super_key is not None:
-                return self[super_key]
+                return super().__getitem__(super_key)
             raise e
-        return out
 
     def __setitem__(self, key: HashableType, value: Any) -> None:
         try:
@@ -23,9 +22,9 @@ class SubclassDict(TypeDict):
         except KeyError as e:
             super_key = self._get_super_key(key)
             if super_key is not None:
-                self[super_key] = value
+                super().__setitem__(super_key, value)
         else:
-            self[key] = value
+            super().__setitem__(key, value)
         
     def _get_super_key(self, value) -> HashableType | None:
         for key in self.data:
