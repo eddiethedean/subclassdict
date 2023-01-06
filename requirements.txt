@@ -1,1 +1,1 @@
-typedict>=0.0.2
+typedict>=0.0.3
