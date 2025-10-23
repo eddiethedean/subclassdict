@@ -1,16 +1,4 @@
-creds.py
-notebooks/
-
-subclassdict.egg-info/
-subclassdict/__pycache__/
-dist/
-build/
-.vscode/
-.ipynb_checkpoints/
-__pycache__/
-tests/__pycache__/
-
- Byte-compiled / optimized / DLL files
+# Byte-compiled / optimized / DLL files
 __pycache__/
 *.py[cod]
 *$py.class
@@ -139,3 +127,14 @@ dmypy.json
 
 # Pyre type checker
 .pyre/
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# OS
+.DS_Store
+Thumbs.db
