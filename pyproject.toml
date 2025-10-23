@@ -7,7 +7,7 @@ name = "subclassdict"
 version = "0.1.0"
 description = "A TypeDict that allows subclasses of type keys to be used as keys"
 readme = "README.md"
-license = {text = "MIT"}
+license = "MIT"
 authors = [
     {name = "Odos Matthews"}
 ]
@@ -32,10 +32,10 @@ dependencies = [
 ]
 
 [project.urls]
-Homepage = "https://github.com/odosmatthews/subclassdict"
-Repository = "https://github.com/odosmatthews/subclassdict"
-Issues = "https://github.com/odosmatthews/subclassdict/issues"
-Documentation = "https://github.com/odosmatthews/subclassdict#readme"
+Homepage = "https://github.com/eddiethedean/subclassdict"
+Repository = "https://github.com/eddiethedean/subclassdict"
+Issues = "https://github.com/eddiethedean/subclassdict/issues"
+Documentation = "https://github.com/eddiethedean/subclassdict#readme"
 
 [project.optional-dependencies]
 dev = [

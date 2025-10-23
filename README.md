@@ -1,9 +1,9 @@
 # SubclassDict
 
-[![CI](https://github.com/odosmatthews/subclassdict/workflows/CI/badge.svg)](https://github.com/odosmatthews/subclassdict/actions)
+[![CI](https://github.com/eddiethedean/subclassdict/workflows/CI/badge.svg)](https://github.com/eddiethedean/subclassdict/actions)
 [![PyPI version](https://badge.fury.io/py/subclassdict.svg)](https://badge.fury.io/py/subclassdict)
 [![Python versions](https://img.shields.io/pypi/pyversions/subclassdict.svg)](https://pypi.org/project/subclassdict/)
-[![Code coverage](https://codecov.io/gh/odosmatthews/subclassdict/branch/main/graph/badge.svg)](https://codecov.io/gh/odosmatthews/subclassdict)
+[![Code coverage](https://codecov.io/gh/eddiethedean/subclassdict/branch/main/graph/badge.svg)](https://codecov.io/gh/eddiethedean/subclassdict)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
 A TypeDict that allows subclasses of type keys to be used as keys. When a key is not found, it automatically looks for the closest superclass key, enabling polymorphic behavior in dictionary lookups.
@@ -229,7 +229,7 @@ print(d[classes[-1]])  # Fast O(1) lookup
 ### Setup
 
 ```bash
-git clone https://github.com/odosmatthews/subclassdict.git
+git clone https://github.com/eddiethedean/subclassdict.git
 cd subclassdict
 pip install -e .[dev]
 ```
@@ -299,6 +299,6 @@ A: Yes, but subclass lookup only works with type objects. Non-type keys work lik
 
 ## Support
 
-- **Issues**: [GitHub Issues](https://github.com/odosmatthews/subclassdict/issues)
-- **Discussions**: [GitHub Discussions](https://github.com/odosmatthews/subclassdict/discussions)
-- **Documentation**: [GitHub Pages](https://odosmatthews.github.io/subclassdict/)
+- **Issues**: [GitHub Issues](https://github.com/eddiethedean/subclassdict/issues)
+- **Discussions**: [GitHub Discussions](https://github.com/eddiethedean/subclassdict/discussions)
+- **Documentation**: [GitHub Pages](https://eddiethedean.github.io/subclassdict/)
